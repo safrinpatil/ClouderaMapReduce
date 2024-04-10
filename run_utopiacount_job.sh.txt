@@ -1,0 +1,8 @@
+#!/bin/bash
+/usr/bin/hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+-files mapper.py,reducer.py \
+-input /utopiacount/ \
+-output /utopiaoutput/output04 \
+-mapper mapper.py \
+-reducer reducer.py 
+
